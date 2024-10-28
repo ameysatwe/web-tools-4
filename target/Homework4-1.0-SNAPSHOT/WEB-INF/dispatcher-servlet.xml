@@ -35,5 +35,9 @@
     <bean name="movieController"
           class="com.mycompany.homework4.controller.MovieController"
           />
+    <bean name="bookController"
+          class="com.mycompany.homework4.controller.BookController"
+    />
+
     <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
 </beans>
