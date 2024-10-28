@@ -3,10 +3,21 @@ package com.mycompany.homework4.model;
 public class Movie {
 
     private String title;
-    private String actor;
+
     private String genre;
     private String director;
     private Integer releaseYear;
+
+    public Movie(String title,String genre,String director, Integer releaseYear){
+        this.title = title;
+        this.genre = genre;
+        this.director = director;
+        this.releaseYear = releaseYear;
+    }
+
+    public Movie() {
+
+    }
 
     public String getTitle() {
         return title;
@@ -16,13 +27,6 @@ public class Movie {
         this.title = title;
     }
 
-    public String getActor() {
-        return actor;
-    }
-
-    public void setActor(String actor) {
-        this.actor = actor;
-    }
 
     public String getGenre() {
         return genre;
