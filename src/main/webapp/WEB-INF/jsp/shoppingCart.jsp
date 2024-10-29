@@ -53,6 +53,41 @@
             border-radius: 10px;
             text-align: center;
         }
+        div {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        p{
+            margin: 10px;
+        }
+
+        /* Styling the checkboxes */
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            accent-color: #007bff; /* Changing the color of selected checkboxes */
+        }
+
+        /* Styling the labels */
+        label {
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling on hover */
+        input[type="checkbox"]:hover {
+            cursor: pointer;
+            transform: scale(1.1); /* Slight zoom on hover */
+            transition: transform 0.2s ease;
+        }
+
+        /* Checked state style */
+        input[type="checkbox"]:checked {
+            transform: scale(1.2); /* Slight zoom on selection */
+            transition: transform 0.2s ease;
+        }
     </style>
 </head>
 <body>
@@ -69,6 +104,42 @@
             <input type="checkbox" id="tv" name="product" value="Television" />
             <label for="tv">Television</label>
         </div>
+
+        <div>
+            <input type="checkbox" id="CPU" name="product" value="CPU" />
+            <label for="CPU">CPU</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="phone" name="product" value="Phone" />
+            <label for="phone">Phone</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="charger" name="product" value="Charger" />
+            <label for="charger">Charger</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="lamp" name="product" value="Lamp" />
+            <label for="lamp">Lamp</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="fan" name="product" value="Fan" />
+            <label for="fan">Fan</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="headphones" name="product" value="Headphones" />
+            <label for="headphones">Headphones</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="keyboard" name="product" value="Keyboard" />
+            <label for="keyboard">Keyboard</label>
+        </div>
+
 
 
         <button type="submit" name="action" value="add">Add to Cart</button>
