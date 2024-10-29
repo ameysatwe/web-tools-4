@@ -49,6 +49,7 @@ http://www.springframework.org/schema/context/spring-context.xsd">
           class="com.mycompany.homework4.controller.MovieController"
           />
     <bean name="bookController"
+          id="/book"
           class="com.mycompany.homework4.controller.BookController"
     />
 
@@ -60,7 +61,9 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 <!--    />-->
 <!--    <bean id="utilityController" class="com.mycompany.homework4.controller.UtilityController"/>-->
 
-<!--    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>-->
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+
+<!--    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>-->
     <bean id="messageUtility"
           class="com.mycompany.homework4.utility.MessageUtility"
           scope="request"

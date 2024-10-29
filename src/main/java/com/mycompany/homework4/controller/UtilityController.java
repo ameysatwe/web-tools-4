@@ -19,13 +19,14 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping(value = "/utility")
 public class UtilityController {
 
+    @Autowired
     private MessageUtility messageUtility;
 
 
 
-    public UtilityController(MessageUtility messageUtility){
-        this.messageUtility = messageUtility;
-    }
+//    public UtilityController(MessageUtility messageUtility){
+//        this.messageUtility = messageUtility;
+//    }
 
 
     @GetMapping
